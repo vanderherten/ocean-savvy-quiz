@@ -50,7 +50,7 @@ let acceptingAnswers = false;
 
 setMaxQuestions(MAX_QUESTIONS);
 resetQuestionCounter(0);
-
+resetScore(0);
 
 /**
  * Function to set the Maximum questions value and show in the HUD (Heads-up Display).
@@ -64,6 +64,13 @@ function setMaxQuestions(num) {
  */
 function resetQuestionCounter(num) {
     updateHTMLOfNodeId('question-counter', num);
+}
+
+/**
+ * Function to Reset the score value and show in the HUD (Heads-up Display).
+ */
+ function resetScore(num) {
+    updateHTMLOfNodeId('score', num);
 }
 
 /**
