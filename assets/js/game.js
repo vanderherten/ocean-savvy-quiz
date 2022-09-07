@@ -116,6 +116,8 @@ function loadQuestion() {
     const MAX_QUESTIONS_EL = parseInt(document.querySelector('#max-questions').innerText);
 
     if (questions.length === 0 || questionCounterEl >= MAX_QUESTIONS_EL) {
+        saveTotalScore();
+        
         return showTotalScore();
     }
     
@@ -126,6 +128,14 @@ function loadQuestion() {
     acceptingAnswers = true;
 
     startTimer();
+}
+
+/**
+ * Save total score to local storage (for access in result page).
+ */
+function saveTotalScore() {
+    let totalScore = document.querySelector('#score').innerText;
+    localStorage.setItem('scoreResult', totalScore);
 }
 
 /**
