@@ -48,10 +48,22 @@ let questions = [];
 let currentQuestion = {};
 let acceptingAnswers = false;
 
-setMaxQuestions(MAX_QUESTIONS);
-resetQuestionCounter(0);
-resetScore(0);
-createQuestions();
+// Waits for the DOM to finish loading before loading the quiz.
+document.addEventListener('DOMContentLoaded', function () {
+    loadQuiz();
+});
+
+/**
+ * Sets the Maximum Questions value to MAX_QUESTIONS.
+ * Then, resets the question counter and score to 0.
+ * Then, creates a question array (full copy) from quizData array.
+ */
+function loadQuiz() {
+    setMaxQuestions(MAX_QUESTIONS);
+    resetQuestionCounter(0);
+    resetScore(0);
+    createQuestions();
+}
 
 /**
  * Function to set the Maximum questions value and show in the HUD (Heads-up Display).
