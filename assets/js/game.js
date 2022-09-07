@@ -104,12 +104,19 @@ function createQuestions() {
     questions = [...QUIZ_DATA];
 }
 
-function loadQuestion() {
+function loadQuestion() {   
     incrementQuestionCounter();
 
     getNewQuestion();
 
     acceptingAnswers = true;
+}
+
+/**
+ * Go to the result page to show total score.
+ */
+function showTotalScore() {
+    window.location.assign('/result.html');
 }
 
 /**
@@ -166,6 +173,6 @@ function onAnswerBtnClick(e) {
     acceptingAnswers = false;
     const clickedAnswer = e.target;
     const selectedAnswer = clickedAnswer.dataset['number'];
-    
+
     loadQuestion();
 }
