@@ -51,6 +51,7 @@ let acceptingAnswers = false;
 setMaxQuestions(MAX_QUESTIONS);
 resetQuestionCounter(0);
 resetScore(0);
+createQuestions();
 
 /**
  * Function to set the Maximum questions value and show in the HUD (Heads-up Display).
@@ -78,4 +79,13 @@ function resetQuestionCounter(num) {
  */
 function updateHTMLOfNodeId(targetId, value) {
     document.querySelector(`#${targetId}`).innerText = value;
+}
+
+/**
+ * Creates a full copy of the quizData array,
+ * which is stored in the questions array.
+ * Copy made with the spread operator to prevent mutation.
+ */
+function createQuestions() {
+    questions = [...QUIZ_DATA];
 }
