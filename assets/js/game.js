@@ -180,6 +180,7 @@ function addEventListenersToAnswerBtns() {
  * Checks if acceptingAnswers. If no, then will ignore user clicked.
  * If yes, then shows selected answer feedback,
  * by highlighting the clicked answer in green when correct or in red when incorrect.
+ * If user clicked answer is correct will incrementScore().
  * Also, will highlight correct answer when answered incorrectly.
  * Then implements 1.5sec TimeOut delay to remove feedback class ('correct' or 'incorrect) and loadQuestion().
  */
