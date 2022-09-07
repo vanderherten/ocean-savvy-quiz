@@ -142,3 +142,15 @@ function getNewQuestion() {
     // Remove the questions already used
     questions.splice(questionIndex, 1);
 }
+
+addEventListenersToAnswerBtns();
+
+/**
+ * Adds Event Listeners to the Answer buttons, to execute the onAnswerBtnClick function.
+ */
+function addEventListenersToAnswerBtns() {
+    const answerEls = Array.from(document.querySelectorAll('.game__answer-text'));
+    answerEls.forEach(function (answerEl) {
+        answerEl.addEventListener('click', onAnswerBtnClick);
+    });
+}
