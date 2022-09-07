@@ -7,6 +7,56 @@
     <title>Ocean Savvy Quiz - Game</title>
 </head>
 <body>
-    
+    <!-- Game Page -->
+    <div class="wrapper game-wrapper">
+        <!-- Game HUD -->
+        <header class="game-hud" aria-label="Quiz Heads-up Display">
+            <!-- Game HUD Item 1 -->
+            <div class="game-hud__item-1">
+                <a aria-label="Home page navigation" href="/index.html" class="game-hud__logo-home"><i class="fas fa-home"></i></a>
+                <p class="game-hud__text" aria-label="Quiz Question Counter Display">
+                    <span id="question-counter"></span> / 
+                    <span id="max-questions"></span>
+                </p>
+                <p class="game-hud__logo-score" aria-label="Quiz Score Display">
+                    <span id="score">0</span> <i class="fas fa-trophy"></i>
+                </p>
+            </div>
+            <!-- Game Hud Item 2 -->
+            <div class="game-hud__item-2">
+                <div class="game-hud__timer-bar" id="timer-bar">
+                    <div aria-label="Quiz timer bar display" class="game-hud__timer-bar-counter" id="timer-bar-counter"></div>
+                    <p aria-label="Quiz timer countdown text display" class="game-hud__timer-bar-text" id="timer-bar-text">15 Sec</p>
+                    <p class="game-hud__timer-bar-logo"><i class="far fa-clock"></i></p>
+                </div>
+            </div>
+        </header>
+        <!-- Game MAIN -->
+        <main class="game__container">
+            <section class="game">
+                <!-- Game question -->
+                <h2 id="question" class="game__heading">What is the answer to this question?</h2>
+                <!-- Game Answers -->
+                <div class="game__answer-container">
+                    <input class="game__answer-prefix" name="answer" type="radio" id="a" value="a"/>
+                    <label class="game__answer-text" for="a" data-number="1">Answer 1</label>
+                </div>
+                <div class="game__answer-container">
+                    <input class="game__answer-prefix" name="answer" type="radio" id="b" value="b"/>
+                    <label class="game__answer-text" for="b" data-number="2">Answer 2</label>
+                </div>
+                <div class="game__answer-container">
+                    <input class="game__answer-prefix" name="answer" type="radio" id="c" value="c"/>
+                    <label class="game__answer-text" for="c" data-number="3">Answer 3</label>
+                </div>
+                <div class="game__answer-container">
+                    <input class="game__answer-prefix" name="answer" type="radio" id="d" value="d"/>
+                    <label class="game__answer-text" for="d" data-number="4">Answer 4</label>
+                </div>
+            </section>
+        </main>
+    </div>
+    <!-- FontAwesome Script -->
+    <script src="https://kit.fontawesome.com/9f7c340e90.js" crossorigin="anonymous"></script>
 </body>
 </html>
