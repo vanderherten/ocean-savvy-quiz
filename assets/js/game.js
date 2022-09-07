@@ -178,15 +178,33 @@ function addEventListenersToAnswerBtns() {
 
 /**
  * Checks if acceptingAnswers. If no, then will ignore user clicked.
- * If yes, then logs selected answer.
- * Then will start loadQuestion() function. 
+ * If yes, then shows selected answer feedback,
+ * by highlighting the clicked answer in green when correct or in red when incorrect.
+ * Also, will highlight correct answer when answered incorrectly.
+ * Then implements 1.5sec TimeOut delay to remove feedback class ('correct' or 'incorrect) and loadQuestion().
  */
 function onAnswerBtnClick(e) {
     if (!acceptingAnswers) return;
   
     acceptingAnswers = false;
     const clickedAnswer = e.target;
-    const selectedAnswer = clickedAnswer.dataset['number'];
+    const selectedAnswer = parseInt(clickedAnswer.dataset['number']);
+    const correctAnswer = currentQuestion.correctAnswer;
+    const correctAnswerEl = document.querySelector(`[data-number="${correctAnswer}"]`);
 
-    loadQuestion();
+    const isCorrect = selectedAnswer === correctAnswer;
+    const classToApply = isCorrect ? 'correct' : 'incorrect';
+
+    clickedAnswer.parentElement.classList.add(classToApply);
+
+    if (!isCorrect) {
+        correctAnswerEl.parentElement.classList.add('correct');
+    }
+
+    const timeoutRef = setTimeout(() => {
+        clickedAnswer.parentElement.classList.remove(classToApply);
+        correctAnswerEl.parentElement.classList.remove('correct');
+        loadQuestion();
+        clearTimeout(timeoutRef);
+    }, 1500);
 }

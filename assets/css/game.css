@@ -143,4 +143,13 @@
     border: 0.1rem solid #1a536d63;
     background: white;
 }
+
+.correct {
+    background-color: #13bd98;
+    color: #143f52;
+}
   
+.incorrect {
+    background-color: #e94b5d;
+    color: #091d25;
+}
