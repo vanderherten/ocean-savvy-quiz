@@ -105,6 +105,14 @@ function createQuestions() {
 }
 
 function loadQuestion() {
-
+    incrementQuestionCounter();
 }
 
+/**
+ * Increment question counter in hud (heads-up display).
+ */
+function incrementQuestionCounter() {
+    let oldQuestionCounterEl = parseInt(document.querySelector('#question-counter').innerText);
+  
+    updateHTMLOfNodeId('question-counter', ++oldQuestionCounterEl);
+}
