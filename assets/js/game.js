@@ -84,7 +84,7 @@ function resetQuestionCounter(num) {
 /**
  * Function to Reset the score value and show in the HUD (Heads-up Display).
  */
- function resetScore(num) {
+function resetScore(num) {
     updateHTMLOfNodeId('score', num);
 }
 
@@ -170,6 +170,13 @@ addEventListenersToAnswerBtns();
 
 /**
  * Adds Event Listeners to the Answer buttons, to execute the onAnswerBtnClick function.
+ * The onAnswerBtnClick function:
+ * Checks if acceptingAnswers. If no, then will ignore user clicked.
+ * If yes, then shows selected answer feedback,
+ * by highlighting the clicked answer in green when correct or in red when incorrect.
+ * If user clicked answer is correct will incrementScore().
+ * Also, will highlight correct answer when answered incorrectly.
+ * Then implements 1.5sec TimeOut delay to remove feedback class ('correct' or 'incorrect) and loadQuestion().
  */
 function addEventListenersToAnswerBtns() {
     const answerEls = Array.from(document.querySelectorAll('.game__answer-text'));
@@ -219,7 +226,7 @@ function onAnswerBtnClick(e) {
 /**
  * Function to increment score by a number value and show in HUD (Heads-up Display).
  */
- function incrementScore(num) {
+function incrementScore(num) {
     let oldScore = parseInt(document.querySelector('#score').innerText);
     updateHTMLOfNodeId('score', oldScore + num);
 }
@@ -229,7 +236,7 @@ function onAnswerBtnClick(e) {
  * Also Checks if acceptingAnswers value is false and if so it stops the timer.
  * Otherwise will start timer of text countdown and timer bar showing in the HUD (Heads-up Display).
  */
- function startTimer() {
+function startTimer() {
     const timerBarEl = document.querySelector('#timer-bar');
     const timerBarTextEl = document.querySelector('#timer-bar-text');
     const timerBarCounterEl = document.querySelector('#timer-bar-counter');
@@ -240,24 +247,24 @@ function onAnswerBtnClick(e) {
     let timerBarCounterWidth = 0;
   
     let timer = setInterval(function () {
-      if (questionTime <= 0) {
-        // stop timer
-        clearInterval(timer);
-        loadQuestion();
-      } else if (acceptingAnswers === false) {
-        // stop timer
-        clearInterval(timer);
-      } else {
-        // start timer
-        questionTime--;
+        if (questionTime <= 0) {
+            // stop timer
+            clearInterval(timer);
+            loadQuestion();
+        } else if (acceptingAnswers === false) {
+            // stop timer
+            clearInterval(timer);
+        } else {
+            // start timer
+            questionTime--;
   
-        // start timer bar text countdown in HUD (Heads-up Display)
-        timerBarTextEl.innerText = `${questionTime} Sec`;
-        timerBarCounterEl.style.width = '0px';
+            // start timer bar text countdown in HUD (Heads-up Display)
+            timerBarTextEl.innerText = `${questionTime} Sec`;
+            timerBarCounterEl.style.width = '0px';
   
-        // start timer bar counter in HUD (Heads-up Display)
-        timerBarCounterWidth += timerBarCounterWidthPerSec;
-        timerBarCounterEl.style.width = timerBarCounterWidth + 'px';
-      }
+            // start timer bar counter in HUD (Heads-up Display)
+            timerBarCounterWidth += timerBarCounterWidthPerSec;
+            timerBarCounterEl.style.width = timerBarCounterWidth + 'px';
+        }
     }, 1000);
-  }
+}
