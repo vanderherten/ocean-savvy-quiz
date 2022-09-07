@@ -107,7 +107,7 @@ function createQuestions() {
 /**
  * Checks if the questions array is empty,
  * or if the maximum questions amount in quiz is reached,
- * If so will show total score in result page.
+ * If so saves total score to show in result page.
  * Otherwise, increments the Question Counter in HUD (Heads-up Display),
  * and loads a new question while also restarting the Timer.
  */
@@ -117,7 +117,7 @@ function loadQuestion() {
 
     if (questions.length === 0 || questionCounterEl >= MAX_QUESTIONS_EL) {
         saveTotalScore();
-        
+
         return showTotalScore();
     }
     
