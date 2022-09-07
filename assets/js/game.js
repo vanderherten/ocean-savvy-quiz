@@ -41,7 +41,7 @@ const QUIZ_DATA = [
     },
 ];
 const MAX_QUESTIONS = 5;
-const TIME_AVAILABLE_FOR_EACH_QUESTION_IN_SECS = 15;
+const TIME_AVAILABLE_FOR_EACH_QUESTION_IN_SECS = 16;
 const ANSWER_CORRECT_POINTS = 20;
 
 let questions = [];
@@ -109,7 +109,7 @@ function createQuestions() {
  * or if the maximum questions amount in quiz is reached,
  * If so will show total score in result page.
  * Otherwise, increments the Question Counter in HUD (Heads-up Display),
- * and loads a new question.
+ * and loads a new question while also restarting the Timer.
  */
 function loadQuestion() {
     const questionCounterEl = parseInt(document.querySelector('#question-counter').innerText);
@@ -124,6 +124,8 @@ function loadQuestion() {
     getNewQuestion();
 
     acceptingAnswers = true;
+
+    startTimer();
 }
 
 /**
@@ -221,3 +223,41 @@ function onAnswerBtnClick(e) {
     let oldScore = parseInt(document.querySelector('#score').innerText);
     updateHTMLOfNodeId('score', oldScore + num);
 }
+
+/**
+ * Checks if allotted question Time is smaller or equal to zero, if so it stops the timer and loadQuestion().
+ * Also Checks if acceptingAnswers value is false and if so it stops the timer.
+ * Otherwise will start timer of text countdown and timer bar showing in the HUD (Heads-up Display).
+ */
+ function startTimer() {
+    const timerBarEl = document.querySelector('#timer-bar');
+    const timerBarTextEl = document.querySelector('#timer-bar-text');
+    const timerBarCounterEl = document.querySelector('#timer-bar-counter');
+  
+    let questionTime = TIME_AVAILABLE_FOR_EACH_QUESTION_IN_SECS;
+    let timerBarCounterFull = timerBarEl.clientWidth;
+    let timerBarCounterWidthPerSec = timerBarCounterFull / questionTime;
+    let timerBarCounterWidth = 0;
+  
+    let timer = setInterval(function () {
+      if (questionTime <= 0) {
+        // stop timer
+        clearInterval(timer);
+        loadQuestion();
+      } else if (acceptingAnswers === false) {
+        // stop timer
+        clearInterval(timer);
+      } else {
+        // start timer
+        questionTime--;
+  
+        // start timer bar text countdown in HUD (Heads-up Display)
+        timerBarTextEl.innerText = `${questionTime} Sec`;
+        timerBarCounterEl.style.width = '0px';
+  
+        // start timer bar counter in HUD (Heads-up Display)
+        timerBarCounterWidth += timerBarCounterWidthPerSec;
+        timerBarCounterEl.style.width = timerBarCounterWidth + 'px';
+      }
+    }, 1000);
+  }
