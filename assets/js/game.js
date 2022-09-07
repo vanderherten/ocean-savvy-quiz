@@ -104,7 +104,21 @@ function createQuestions() {
     questions = [...QUIZ_DATA];
 }
 
-function loadQuestion() {   
+/**
+ * Checks if the questions array is empty,
+ * or if the maximum questions amount in quiz is reached,
+ * If so will show total score in result page.
+ * Otherwise, increments the Question Counter in HUD (Heads-up Display),
+ * and loads a new question.
+ */
+function loadQuestion() {
+    const questionCounterEl = parseInt(document.querySelector('#question-counter').innerText);
+    const MAX_QUESTIONS_EL = parseInt(document.querySelector('#max-questions').innerText);
+
+    if (questions.length === 0 || questionCounterEl >= MAX_QUESTIONS_EL) {
+        return showTotalScore();
+    }
+    
     incrementQuestionCounter();
 
     getNewQuestion();
