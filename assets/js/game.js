@@ -57,12 +57,14 @@ document.addEventListener('DOMContentLoaded', function () {
  * Sets the Maximum Questions value to MAX_QUESTIONS.
  * Then, resets the question counter and score to 0.
  * Then, creates a question array (full copy) from quizData array.
+ * Then, loads a new question from question array and starts the Timer.
  */
 function loadQuiz() {
     setMaxQuestions(MAX_QUESTIONS);
     resetQuestionCounter(0);
     resetScore(0);
     createQuestions();
+    loadQuestion();
 }
 
 /**
@@ -101,3 +103,8 @@ function updateHTMLOfNodeId(targetId, value) {
 function createQuestions() {
     questions = [...QUIZ_DATA];
 }
+
+function loadQuestion() {
+
+}
+
