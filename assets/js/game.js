@@ -48,11 +48,22 @@ let questions = [];
 let currentQuestion = {};
 let acceptingAnswers = false;
 
+setMaxQuestions(MAX_QUESTIONS);
+resetQuestionCounter(0);
+
+
 /**
  * Function to set the Maximum questions value and show in the HUD (Heads-up Display).
  */
 function setMaxQuestions(num) {
     updateHTMLOfNodeId('max-questions', num);
+}
+
+/**
+ * Function to reset the question counter value and show in the HUD (Heads-up Display). 
+ */
+function resetQuestionCounter(num) {
+    updateHTMLOfNodeId('question-counter', num);
 }
 
 /**
