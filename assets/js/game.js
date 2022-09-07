@@ -154,3 +154,18 @@ function addEventListenersToAnswerBtns() {
         answerEl.addEventListener('click', onAnswerBtnClick);
     });
 }
+
+/**
+ * Checks if acceptingAnswers. If no, then will ignore user clicked.
+ * If yes, then logs selected answer.
+ * Then will start loadQuestion() function. 
+ */
+function onAnswerBtnClick(e) {
+    if (!acceptingAnswers) return;
+  
+    acceptingAnswers = false;
+    const clickedAnswer = e.target;
+    const selectedAnswer = clickedAnswer.dataset['number'];
+    
+    loadQuestion();
+}
