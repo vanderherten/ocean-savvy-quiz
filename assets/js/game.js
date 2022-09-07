@@ -106,6 +106,7 @@ function createQuestions() {
 
 function loadQuestion() {
     incrementQuestionCounter();
+    getNewQuestion();
 }
 
 /**
@@ -115,4 +116,26 @@ function incrementQuestionCounter() {
     let oldQuestionCounterEl = parseInt(document.querySelector('#question-counter').innerText);
   
     updateHTMLOfNodeId('question-counter', ++oldQuestionCounterEl);
+}
+
+/**
+ * Get a new random question with its answers out of questions array,
+ * then show question in quiz,
+ * and remove question from questions array (to prevent repeating questions).
+ */
+function getNewQuestion() {
+    const questionIndex = Math.floor(Math.random() * questions.length);
+    currentQuestion = questions[questionIndex];
+  
+    const questionEl = document.querySelector('#question');
+    questionEl.innerText = currentQuestion.question;
+  
+    const answerEls = Array.from(document.querySelectorAll('.game__answer-text'));
+  
+    answerEls.forEach(function (answerEl, index) {
+        answerEl.innerText = currentQuestion['answer' + (index + 1)];
+    });
+  
+    // Remove the questions already used
+    questions.splice(questionIndex, 1);
 }
