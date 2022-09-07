@@ -37,7 +37,7 @@ const QUIZ_DATA = [
         answer2: 'Answer 2',
         answer3: 'Answer 3',
         answer4: 'Answer 4',
-        correctAnswer: 5,
+        correctAnswer: 4,
     },
 ];
 const MAX_QUESTIONS = 5;
@@ -191,9 +191,13 @@ function onAnswerBtnClick(e) {
     const selectedAnswer = parseInt(clickedAnswer.dataset['number']);
     const correctAnswer = currentQuestion.correctAnswer;
     const correctAnswerEl = document.querySelector(`[data-number="${correctAnswer}"]`);
-
+    
     const isCorrect = selectedAnswer === correctAnswer;
     const classToApply = isCorrect ? 'correct' : 'incorrect';
+
+    if (isCorrect) {
+        incrementScore(ANSWER_CORRECT_POINTS);
+      }
 
     clickedAnswer.parentElement.classList.add(classToApply);
 
@@ -207,4 +211,12 @@ function onAnswerBtnClick(e) {
         loadQuestion();
         clearTimeout(timeoutRef);
     }, 1500);
+}
+
+/**
+ * Function to increment score by a number value and show in HUD (Heads-up Display).
+ */
+ function incrementScore(num) {
+    let oldScore = parseInt(document.querySelector('#score').innerText);
+    updateHTMLOfNodeId('score', oldScore + num);
 }
