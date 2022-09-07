@@ -106,7 +106,10 @@ function createQuestions() {
 
 function loadQuestion() {
     incrementQuestionCounter();
+
     getNewQuestion();
+
+    acceptingAnswers = true;
 }
 
 /**
