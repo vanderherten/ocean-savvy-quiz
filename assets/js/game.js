@@ -49,6 +49,13 @@ let currentQuestion = {};
 let acceptingAnswers = false;
 
 /**
+ * Function to set the Maximum questions value and show in the HUD (Heads-up Display).
+ */
+function setMaxQuestions(num) {
+    updateHTMLOfNodeId('max-questions', num);
+}
+
+/**
  * Function to update an HTML element with the ID attribute and assign a value to it's innerText
  */
 function updateHTMLOfNodeId(targetId, value) {
