@@ -48,3 +48,9 @@ let questions = [];
 let currentQuestion = {};
 let acceptingAnswers = false;
 
+/**
+ * Function to update an HTML element with the ID attribute and assign a value to it's innerText
+ */
+function updateHTMLOfNodeId(targetId, value) {
+    document.querySelector(`#${targetId}`).innerText = value;
+}
