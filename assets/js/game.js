@@ -1,5 +1,5 @@
 const MAX_QUESTIONS = 5;
-const TIME_AVAILABLE_FOR_EACH_QUESTION_IN_SECS = 16;
+const TIME_AVAILABLE_FOR_EACH_QUESTION_IN_SECS = 15;
 const ANSWER_CORRECT_POINTS = 20;
 
 let questions = [];
@@ -224,6 +224,8 @@ function startTimer() {
             clearInterval(timer);
         } else {
             // start timer
+            // add 1 to questionTime so TimerBarTextEl will show the TIME_AVAILABLE_FOR_EACH_QUESTION_IN_SECS value at start of countdown in HUD
+            questionTime += 1;
             questionTime--;
   
             // start timer bar text countdown in HUD (Heads-up Display)
