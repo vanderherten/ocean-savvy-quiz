@@ -132,7 +132,7 @@
   
 .game__answer-prefix {
     display: none;
-}
+} 
   
 .game__answer-prefix + *::before {
     content: '';
@@ -144,6 +144,26 @@
     border-radius: 50%;
     border: 0.1rem solid #1a536d63;
     background: white;
+} 
+
+.correct .game__answer-prefix + *::before {
+    background: radial-gradient(
+    #2ef2c6 0%,
+    #2ef2c6 50%,
+    transparent 60%,
+    transparent
+  );
+  border-color: #2ef2c6;
+}
+
+.incorrect .game__answer-prefix + *::before {
+    background: radial-gradient(
+    #1a536d63 0%,
+    #1a536d63 50%,
+    transparent 60%,
+    transparent
+  );
+  border-color: #1a536d63;
 }
 
 .correct {
