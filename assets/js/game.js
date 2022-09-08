@@ -65,7 +65,7 @@ function createQuestions() {
 /**
  * Checks if the questions array is empty,
  * or if the maximum questions amount in quiz is reached,
- * If so saves total score to show in result page.
+ * If so saves total score and maximum points available to show in result page.
  * Otherwise, increments the Question Counter in HUD (Heads-up Display),
  * and loads a new question while also restarting the Timer.
  */
@@ -89,15 +89,18 @@ function loadQuestion() {
 }
 
 /**
- * Save total score to local storage (for access in result page).
+ * Saves total score and maximum points available to local storage (for access in result page).
  */
 function saveTotalScore() {
     let totalScore = document.querySelector('#score').innerText;
     localStorage.setItem('scoreResult', totalScore);
+
+    let maxPoints = MAX_QUESTIONS * ANSWER_CORRECT_POINTS;
+    localStorage.setItem('maxPointsResult', maxPoints);
 }
 
 /**
- * Go to the result page to show total score.
+ * Go to the result page to show total score with maximum points available.
  */
 function showTotalScore() {
     window.location.assign('/result.html');
