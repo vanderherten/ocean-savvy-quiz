@@ -181,14 +181,18 @@ function onAnswerBtnClick(e) {
       }
 
     clickedAnswer.parentElement.classList.add(classToApply);
+    clickedAnswer.parentElement.classList.add('clicked');
 
     if (!isCorrect) {
         correctAnswerEl.parentElement.classList.add('correct');
+        correctAnswerEl.parentElement.classList.add('clicked--incorrect');
     }
 
     const timeoutRef = setTimeout(() => {
         clickedAnswer.parentElement.classList.remove(classToApply);
+        clickedAnswer.parentElement.classList.remove('clicked');
         correctAnswerEl.parentElement.classList.remove('correct');
+        correctAnswerEl.parentElement.classList.remove('clicked--incorrect');
         loadQuestion();
         clearTimeout(timeoutRef);
     }, 1500);
