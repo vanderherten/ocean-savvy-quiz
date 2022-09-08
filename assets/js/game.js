@@ -211,8 +211,11 @@ function startTimer() {
     const timerBarEl = document.querySelector('#timer-bar');
     const timerBarTextEl = document.querySelector('#timer-bar-text');
     const timerBarCounterEl = document.querySelector('#timer-bar-counter');
-  
-    let questionTime = TIME_AVAILABLE_FOR_EACH_QUESTION_IN_SECS;
+
+    /* add 1 to the TIME_AVAILABLE_FOR_EACH_QUESTION_IN_SECS value: 
+    so that the TimerBarTextEl.innerText will show the actual TIME_AVAILABLE_FOR_EACH_QUESTION_IN_SECS value 
+    at the start of the countdown in the HUD */
+    let questionTime = TIME_AVAILABLE_FOR_EACH_QUESTION_IN_SECS + 1;
     let timerBarCounterFull = timerBarEl.clientWidth;
     let timerBarCounterWidthPerSec = timerBarCounterFull / questionTime;
     let timerBarCounterWidth = 0;
@@ -227,8 +230,6 @@ function startTimer() {
             clearInterval(timer);
         } else {
             // start timer
-            // add 1 to questionTime so TimerBarTextEl will show the TIME_AVAILABLE_FOR_EACH_QUESTION_IN_SECS value at start of countdown in HUD
-            questionTime += 1;
             questionTime--;
   
             // start timer bar text countdown in HUD (Heads-up Display)
