@@ -1,7 +1,7 @@
 // Waits for the DOM to finish loading before showing Score Results.
 document.addEventListener('DOMContentLoaded', function() {
     showScoreResult();
-})
+});
 
 /**
  * Gets score result from local storage and shows score result on result page.
