@@ -1,0 +1,96 @@
+/*==============
+|| MOBILE FIRST
+===============*/
+
+/* || RULES PAGE */
+
+/* RULES WRAPPER */
+
+.rules__wrapper {
+    flex-direction: column;
+}
+
+/* RULES MAIN */
+  
+.rules__container {
+    border-radius: 2rem;
+    background-color: #fff;
+    margin-top: 0.8rem;
+}
+  
+.rules {
+    width: 90%;
+    margin: 3rem auto;
+    margin-bottom: 3.7rem;
+}
+
+/* RULES MAIN - HEADING */
+  
+.rules__heading {
+    text-align: center;
+    color: #1a536d;
+    font-size: 2.1rem;
+    padding-top: 0.3rem;
+    margin-bottom: 3rem;
+    font-variation-settings: 'wght' 500;
+}
+  
+/* RULES MAIN - TEXT */
+
+.rules__text {
+    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    margin-left: 1.6rem;
+    font-size: 1.6rem;
+    font-variation-settings: 'wght' 300;
+    background-color: #fff;
+    color: #1a536d;
+}
+
+/* RULES FOOTER - NAVIGATION - BTNS */
+
+.rules__nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    align-self: center;
+    margin-top: 2rem;
+    margin-bottom: 0rem;
+}
+
+.btn__game-page:link,
+.btn__game-page:visited { 
+    margin-bottom: 2rem;
+}
+
+/*=========================== 
+  || MEDIA QUERY BREAKPOINTS
+============================*/
+
+@media only screen and (min-width: 450px) {
+    /* || RULES PAGE */
+
+    /* RULES FOOTER - NAVIGATION - BTNS */
+
+    .rules__nav {
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 3.7rem;
+    }
+    
+    .btn:link,
+    .btn:visited {
+        display: inline-block;
+        margin-top: 3.7rem;
+    }
+
+    .btn__game-page:link,
+    .btn__game-page:visited {
+        margin-bottom: 0rem;
+    }
+}

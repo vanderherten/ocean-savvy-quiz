@@ -5,26 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ocean Savvy Quiz - Rules</title>
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/rules.css">
 </head>
 <body>
-    <div>
+    <!-- Rules Page -->
+    <div class="wrapper rules__wrapper">
         <!-- Rules MAIN -->
-        <main>
-            <section>
+        <main class="rules__container">
+            <section class="rules">
                 <!-- Rules Heading-->
-                <h1>How to play the game?</h1>
+                <h1 class="rules__heading">How to play the game?</h1>
                 <!-- Rules Text -->
-                <p>The quiz has 7 questions which will be worth 20 points each.</p>
-                <p>The maximum score you can get is 140 points.</p>
-                <p>You will always have 15 seconds to answer each question. If the time is up you’ll receive 0 points for this question and a new question will be shown.</p>
-                <p>You can keep track of the amount of questions left, the points gained and the time left for each question in the quiz HUD (heads-up display) or status bar.</p>
-                <p>You’ll only be able to click once to select an answer for each question.</p>
-                <p>If you answer correctly, your selected answer will be highlighted in green.</p>
-                <p>If you answer incorrectly, your selected answer will be highlighted in red and you will also get feedback as the correct answer will be highlighted in green simultaneously.</p>
-                <p>After selecting an answer and getting the correct/incorrect feedback, a new question will automatically be shown and the timer will restart.</p>
-                <p>After answering all 7 questions, the result page with your total score will appear.</p>
+                <ul>
+                    <li class="rules__text">The quiz has 7 questions which will be worth 20 points each.</li>
+                    <li class="rules__text">The maximum score you can get is 140 points.</li>
+                    <li class="rules__text">You will always have 15 seconds to answer each question. If the time is up you’ll receive 0 points for this question and a new question will be shown.</li>
+                    <li class="rules__text">You can keep track of the amount of questions left, the points gained and the time left for each question in the quiz HUD (heads-up display) or status bar.</li>
+                    <li class="rules__text">You’ll only be able to click once to select an answer for each question.</li>
+                    <li class="rules__text">If you answer correctly, your selected answer will be highlighted in green.</li>
+                    <li class="rules__text">If you answer incorrectly, your selected answer will be highlighted in red and you will also get feedback as the correct answer will be highlighted in green simultaneously.</li>
+                    <li class="rules__text">After selecting an answer and getting the correct/incorrect feedback, a new question will automatically be shown and the timer will restart.</li>
+                    <li class="rules__text">After answering all 7 questions, the result page with your total score will appear.</li>
+                </ul>
             </section>
         </main>
+        <!-- Rules FOOTER -->
+        <footer>
+            <!-- Rules Navigation  -->
+            <nav class="rules__nav">
+                <!-- Rules Nav - Btns -->
+                <a aria-label="Quiz rules page" href="/index.html" class="btn">Go Home</a>
+                <a aria-label="Quiz game page" href="/game.html" class="btn btn__game-page">Start Quiz</a>
+            </nav>
+        </footer>
     </div>
 </body>
 </html>
