@@ -103,7 +103,7 @@ function saveTotalScore() {
  * Go to the result page to show total score with maximum points available.
  */
 function showTotalScore() {
-    window.location.assign('/result.html');
+    window.location.assign('./result.html');
 }
 
 /**
