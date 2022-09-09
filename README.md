@@ -6,3 +6,23 @@ The Ocean Savvy Quiz is a site that invites people to test their knowledge of Oc
 
 [View the live site here](https://vanderherten.github.io/ocean-savvy-quiz/index.html)
 
+## Features
+
+### Existing Features
+
+- **Home Page**
+    - This is the welcome page that invites the user to play the quiz and test their knowledge of the world's ocean.
+    - A new user will have the option to find out how to play the game by pressing the 'How To Play' button. 
+    - The returning  or new user will also have the option to start the game right away, by pressing the 'Start Quiz' button.
+
+![Home Page](assets/images-readme/home-page.png)
+
+- **Game Page**
+    - After choosing to start the quiz, the user will see a fully featured quiz centered on the game page. The quiz is designed in white against a darker blue background to give visual clarity to the user. 
+    - On top their is the HUD (Heads-up display) or status bar in white . Featured with a home page navigation, a question counter, a score counter and a timer bar. This allows the user to have visual information on their game performance while playing.
+    - Underneath the Heads-up display, there is the quiz game, with a clear question heading and four answer options the user can choose from. 
+
+![Game Page](assets/images-readme/game-page.png)
+
+
+
