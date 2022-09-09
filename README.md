@@ -6,6 +6,54 @@ The Ocean Savvy Quiz is a site that invites people to test their knowledge of Oc
 
 [View the live site here](https://vanderherten.github.io/ocean-savvy-quiz/)
 
+## Project Goals
+
+- To design a fun quiz game for users to test their knowledge of the world's ocean.
+- To design a quiz game where the user will also learn easily new knowledge about the world's ocean.
+- To design an user friendly interactive quiz, whereby the user has easy access to the required information throughout the game site.
+- To demonstrate competency in HTML, CSS and JavaScipt while maintaining a focus on attention to detail regarding the user interface and user experience. 
+
+## UX - User Experience
+
+- As a first-time user:
+    - I want to be able to fully understand what the site is about from the home page.
+    - I want to have access to the quiz game rules before starting the game.
+    - I want to have easy access to starting the game from the rules page.
+
+- As a user:
+    - I want to be able to have easy access to starting the quiz from the home page.
+    - I want to be able to easily visually track an update on what my score is while playing the quiz game.
+    - I want to be able to easily visually track an updated on what question I am currently on in the quiz game.
+    - I want to be able to easily visually track the time counter in the quiz game.
+    - I want to receive feedback to whether I answered a question correctly or incorrectly.
+    - I want to receive feedback to what the correct answer was if I answered the question incorrectly, to not only test my knowledge but also learn new knowledge while playing the quiz game.
+    - I want to be able to move through the quiz efforlessly.
+    - I want to be able to navigate back to the home page if needed, from the game page.
+    - I want to be presented with my quiz total score results in a concise manner.
+    - I want to be able to see the highest total score possible in the results page.
+    - I want to be able to easily navigate back to the home page when finishing the game.
+    - I want to be able to easily restart the quiz after finishing the game.
+
+### Wireframes
+
+- The Ocean Savvy Quiz project wireframes were designed using [Balsamiq](https://balsamiq.com/). The designs vary slightly in some places from the end ux site design due to some design decisions made during the development process.
+
+    - Home page Wireframes:
+
+    ![Home page Wireframes](assets/images-readme/wireframes-home.png)
+
+    - Rules page Wireframes:
+
+    ![Rules page Wireframes](assets/images-readme/wireframes-rules.png)
+
+    - Game page Wireframes:
+
+    ![Game page Wireframes](assets/images-readme/wireframes-game.png)
+
+    - Result page Wireframes:
+
+    ![Result page Wireframes](assets/images-readme/wireframes-result.png)
+
 ## Features
 
 ### Existing Features
