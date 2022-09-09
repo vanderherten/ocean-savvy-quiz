@@ -62,6 +62,8 @@ The Ocean Savvy Quiz is a site that invites people to test their knowledge of Oc
 - **Question and Answers Section**
     - Below the HUD in the center of the game page is the Question Answer Section displayed on a white background to give the user visual clarity while playing the game.
     - The user will be asked one question at a time and given a choice of four answers.
+    - After the user has selected an answer, there will be feedback given whether the question was answered correctly or incorrectly.
+    - After the answer feedback is show a new question will automatically get displayed, which provides a greater user experience as the user won't have to press a next button and can just keep playing the game without a delay.
 
 ![Question and Answers Section](assets/images-readme/question-answers-sect.png)
 
@@ -75,5 +77,24 @@ The Ocean Savvy Quiz is a site that invites people to test their knowledge of Oc
 
 ![Answer Feedback Incorrect](assets/images-readme/answer-incorrect.png)
 
+- **Result Page**
+    - After answering all the questions of the quiz, the user will be shown their total score in the result page.
+    - The score will show the user's total score in relation to the maximum score the user could have obtained. This will give the user a clear reference and also motivate them to try again.
+    - Underneath the listed Total Score, there are two navigation buttons the user can choose from.
+    - The 'Play Again' button will allow the user to restart the game to try to get a higher score or learn some more about the world's ocean.
+    - The 'Go Home' button will allow the user to navigate back to the home page. This gives the user a chance to take a break or navigate back to reread the rules page. 
+
+![Result Page](assets/images-readme/result-page.png)
+
+### Features Left to Implement
+
+- **Result Page Score Text Feedback**
+    - At the top of the result page there could be feedback shown on how well the user performed. 
+    - Text could be show stating 'Well Done!', 'Almost perfect score!', 'Try again!' etc.
+    - This would allow for a more engaging user experience.
+
+- **HiScores Page**
+    - This feature would allow the user to save their scores and entice them to beat their best score. 
+    - It would also be a reference to compete with another user and make the game more fun. 
 
 
