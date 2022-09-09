@@ -42,6 +42,30 @@ The Ocean Savvy Quiz is a site that invites people to test their knowledge of Oc
 
 ![Score Tracker](assets/images-readme/score-tracker.png)
 
+- **Timer Bar**
+    - At the bottom of the Heads-up display there is a timer bar shown.
+    - This feature will give the user a clear visual of how much time every quiz question allows for and how much time the user still has left to answer the question.
+    - The timer bar will gradualy fill up, signifying how much time the user has already used.
+    - The timer bar also shows a text countdown timer starting at 15 seconds and counting down to zero. This will be another way the user can keep track of the quiz question time, as it gives a clear number of seconds left to answer.
+
+![Timer Bar Start](assets/images-readme/timer-bar-start.png)
+![Timer Bar End](assets/images-readme/timer-bar-end.png)
+
+- **Question and Answers Section**
+    - Below the HUD in the center of the game page is the Question Answer Section displayed on a white background to give the user visual clarity while playing the game.
+    - The user will be asked one question at a time and given a choice of four answers.
+
+![Question and Answers Section](assets/images-readme/question-answers-sect.png)
+
+- **Answer Feedback**
+    - After the user has selected an answer, there will immediately be feedback on whether the user answered the question correctly or not.
+    - If the user's anwer is correct, the selected answer will be highlighted in green.
+    - If the user's answer is incorrect, the selected answer will be highlighted in red and the correct answer to the question will be simultaneously highlighted in green.
+    - The feature of showing the correct answer as well when selecting an incorrect answer, allows the user to learn besides testing their knowledge of the ocean.
+
+![Answer Feedback Correct](assets/images-readme/answer-correct.png)
+
+![Answer Feedback Incorrect](assets/images-readme/answer-incorrect.png)
 
 
 
