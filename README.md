@@ -4,7 +4,7 @@ The Ocean Savvy Quiz is a site that invites people to test their knowledge of Oc
 
 ![Responsive Mockup](assets/images-readme/mockup.png)
 
-[View the live site here](https://vanderherten.github.io/ocean-savvy-quiz/index.html)
+[View the live site here](https://vanderherten.github.io/ocean-savvy-quiz/)
 
 ## Features
 
@@ -96,5 +96,45 @@ The Ocean Savvy Quiz is a site that invites people to test their knowledge of Oc
 - **HiScores Page**
     - This feature would allow the user to save their scores and entice them to beat their best score. 
     - It would also be a reference to compete with another user and make the game more fun. 
+
+## Testing
+
+The testing process can be viewed [here](testing.md).
+
+## Deployment
+
+- The website was deployed to GitHub pages. The steps taken to deploy were as follows:
+    - In the GitHub relevant [ocean-savvy-quiz](https://github.com/vanderherten/ocean-savvy-quiz) repository, at the top navigate to the Settings tab.
+    - In the left vertical navigation menu navigate to the Pages tab.
+    - Under the Build and Deployment section, select 'main' as the Branch option.
+    - Press the Save tab.
+    - The page will automatically refresh and after a few minutes a link to the live site will appear under the GitHub pages heading.
+    - There is no difference between the deployed and development version of this website.
+
+The live site can be found here - [ocean-savvy-quiz](https://vanderherten.github.io/ocean-savvy-quiz/)
+
+## Credits
+
+### Content
+
+    - The Icons in the Heads-up Display were take from [Font Awesome](https://fontawesome.com/)
+    - The Favicon was created from a google ocean search png image and [Favicon.io](https://favicon.io/favicon-converter/) was used to convert the image to a favicon.
+    - The UI gradient background color was created by selecting colors from the [BBC site](https://www.bbc.com/storyworks/specials/the-ocean-a-place-of-awe-mystery-and-allure/)
+    - The Quiz Questions were taken from:
+        - [Britannica Oceanography Quiz](https://www.britannica.com/quiz/oceanography-quiz)
+        - [The Ultimate Oceanography Quiz](https://play.howstuffworks.com/quiz/oceanography-quiz)
+        - [The Oceans of World Quiz](https://mcqlearn.com/science/earth-science/oceans-multiple-choice-questions-answers.php)
+        - [The Oceanography: Ocean Water Quiz](https://mcqlearn.com/science/earth-science/oceanography-ocean-water-multiple-choice-questions-answers.php)
+        - [The Movement of Ocean Water Quiz](https://mcqlearn.com/science/earth-science/movement-of-ocean-water-multiple-choice-questions-answers.php)
+        - [The Ocean Exploration Quiz](https://mcqlearn.com/science/earth-science/oceans-exploration-multiple-choice-questions-answers.php)
+        - [The Marine Life Trivia Quiz](https://txmarspecies.tamug.edu/trivia.cfm)
+        - [The Sea Animals Quiz](https://binghomepageweeklyquiz.com/sea-animal-quiz/)
+        - [The National Geographic Kids Oceans Quiz](https://www.natgeokids.com/uk/home-is-good/oceans-quiz/)
+    - The decision on how many questions to put in my quiz was guided by a blog:
+        - [How Many Questions Should My Quiz Have?](https://www.tryinteract.com/blog/how-many-questions-should-my-quiz-have/)
+    - The Quiz UI Interface was inspired by:
+        - [YouTube Quiz App - Flutter Complete App](https://www.youtube.com/watch?v=Nhy0VWAMsFU)
+    - The Quiz development was inspired by:
+        - [YouTube Tutorial - Build a Quiz App with HTML, CSS and JavaScript](https://www.youtube.com/playlist?list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx)
 
 
