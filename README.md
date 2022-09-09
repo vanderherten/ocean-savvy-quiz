@@ -17,6 +17,14 @@ The Ocean Savvy Quiz is a site that invites people to test their knowledge of Oc
 
 ![Home Page](assets/images-readme/home-page.png)
 
+- **Rules Page**
+    - This page guides the user in how the game is played.
+    - There is a clear heading 'How to play the game?' followed underneath with a list of clear guidelines on how to play the game and what to expect to happen while playing the game. 
+    - Underneath the 'How to play the game?' section are two navigation buttons, 'How To Play' and 'Start Quiz'
+    - The navigaion buttons allow the user to either navigate back to the home page or to start the quiz. The latter feature button allows an user friendly navigation to start playing the game, as to not having to be forced to go back to the home page in order to start the quiz. 
+
+![Rules Page](assets/images-readme/rules-page.png)
+
 - **Game Page**
     - After choosing to start the quiz, the user will see a fully featured quiz centered on the game page. The quiz is designed in white against a darker blue background to give visual clarity to the user. 
     - On top their is the HUD (Heads-up display) or status bar in white . Featured with a home page navigation, a question counter, a score counter and a timer bar. This allows the user to have visual information on their game performance while playing.
