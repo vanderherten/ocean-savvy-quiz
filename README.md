@@ -6,6 +6,28 @@ The Ocean Savvy Quiz is a site that invites people to test their knowledge of Oc
 
 [View the live site here](https://vanderherten.github.io/ocean-savvy-quiz/)
 
+---
+
+## Contents
+
+- [**Project Goals**](#project-goals)
+- [**UX - User Experience**](#ux---user-experience)
+    - [User Stories](#user-stories)
+    - [Wireframes](#wireframes)
+- [**UI - User Interface**](#ui---user-interface)
+    - [Typography](#typography)
+    - [Colors](#colors)
+- [**Features**](#features)
+    - [**Existing Features**](#existing-features)
+    - [**Features  Left to Implement**](#features-left-to-implement)       
+- [**Testing**](#testing)
+- [**Deployment**](#deployment)
+- [**Credits**](#credits)
+    - [Content](#content)
+- [**Acknowledgements**](#acknowledgements)
+
+---
+
 ## Project Goals
 
 - To design a fun quiz game for users to test their knowledge of the world's ocean.
@@ -14,6 +36,8 @@ The Ocean Savvy Quiz is a site that invites people to test their knowledge of Oc
 - To demonstrate competency in HTML, CSS and JavaScipt while maintaining a focus on attention to detail regarding the user interface and user experience. 
 
 ## UX - User Experience
+
+### User Stories
 
 - As a first-time user:
     - I want to be able to fully understand what the site is about from the home page.
@@ -192,6 +216,7 @@ The live site can be found here - [ocean-savvy-quiz](https://vanderherten.github
 
 ### Content
 
+- The following content was used in the quiz game app design and development process:
     - The Icons in the Heads-up Display were take from [Font Awesome](https://fontawesome.com/)
     - The Favicon was created from a google ocean search png image and [Favicon.io](https://favicon.io/favicon-converter/) was used to convert the image to a favicon.
     - The UI gradient background color was created by selecting colors from the [awwwards site](https://www.awwwards.com/sites/the-ocean)
