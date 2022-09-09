@@ -210,8 +210,22 @@ The testing process can be viewed [here](testing.md).
     - The page will automatically refresh and after a few minutes a link to the live site will appear under the GitHub pages heading.
     - There is no difference between the deployed and development version of this website.
 
-The live site can be found here - [ocean-savvy-quiz](https://vanderherten.github.io/ocean-savvy-quiz/)
+- To fork the repository on GitHub
+    - A copy of the GitHub Repository can be made by forking the GitHub account. This copy can be viewed and changes can be made to the copy without affecting the original repository. The following steps should be taken to fork the repository:
+        - Log in to Github and locate the [repository ocean-savvy-quiz](https://github.com/vanderherten/ocean-savvy-quiz).
+        - On the right-hand side of the page in line with the repository name is a button called 'Fork', click on the button to create a copy of the original repository in your GitHub Account.
 
+- To create a local clone of the Ocean Savvy Quiz project
+    - The following steps should be taken:
+        - Under the repository’s name, click on the 'code' tab.
+        - In the 'Clone with HTTPS' section, click on the clipboard icon to copy the given URL.
+        - In your preferred IDE, open 'Git Bash'.
+        - Change the current working directory to the location where you want the cloned directory to be made.
+        - Type 'git clone', and then paste the URL copied from GitHub.
+        - Press 'enter' and the local clone will be created.
+
+The live site can be found here - [ocean-savvy-quiz](https://vanderherten.github.io/ocean-savvy-quiz/)
+        
 ## Credits
 
 ### Content
