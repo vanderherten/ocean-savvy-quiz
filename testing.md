@@ -26,6 +26,15 @@
 
     ![Lighthouse results](assets/images-readme/images-testing/lighthouse.png)
 
+
+### Website Functionality Testing
+
+- Website:
+    - I tested that all the pages work in different browsers: Chrome, Firefox, Safari.
+- Navigation links:
+    - All navigation links were tested for desktop and mobile.
+
+
 ### Bugs
 
 - Solved Bugs:
