@@ -137,4 +137,8 @@ The live site can be found here - [ocean-savvy-quiz](https://vanderherten.github
     - The Quiz development was inspired by:
         - [YouTube Tutorial - Build a Quiz App with HTML, CSS and JavaScript](https://www.youtube.com/playlist?list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx)
 
+## Acknowledgements
 
+- Thank you to my mentor [Akshat Garg](https://www.linkedin.com/in/akshatnitd) for giving me positive encouragement, guidance and support throughout the development process.
+- Thank you to [Code Institute](https://codeinstitute.net/) for their information, guidance and support.
+- Thank you to the Slack community for their support throughout the process. 
