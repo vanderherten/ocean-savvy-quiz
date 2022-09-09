@@ -24,5 +24,24 @@ The Ocean Savvy Quiz is a site that invites people to test their knowledge of Oc
 
 ![Game Page](assets/images-readme/game-page.png)
 
+- **Home Page Icon Navigation Button**
+    - At the left top corner of the Heads-up display there is a home page icon navigation button. 
+    - This feature will give the user the option to navigate back to the home page at any time while playing the quiz.
+
+![Home Page Navigation Button](assets/images-readme/home-page-nav-icon.png)
+
+- **Question Counter**
+    - In the top middle of the Heads-up display there is the question counter shown.
+    - This feature will give the user a clear visual of what question they are currently on and how many questions they still have left to answer to finish the quiz.
+
+![Question Counter](assets/images-readme/question-counter.png)
+
+- **Score Tracker**
+    - In the top right corner of the Heads-up display there is the score tracker shown.
+    - This feature will give the user a clear visual of what their current score is in the game. 
+
+![Score Tracker](assets/images-readme/score-tracker.png)
+
+
 
 
