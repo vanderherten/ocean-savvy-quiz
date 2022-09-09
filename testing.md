@@ -23,6 +23,7 @@
 
 - Accessibility:
     - I tested the site's accessibility by running it through Lighthouse in the Google Chrome developer tools (the result for both desktop and mobile are the same):
+
     ![Lighthouse results](assets/images-readme/images-testing/lighthouse.png)
 
 ### Bugs
